@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial, Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-color: #f3f9d2;
+    background-image: linear-gradient(rgba(0,0,0,0.7) #355135),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: arial, Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-bar{
+    background: #C0D684;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,.menu-bar ul li:hover{
+    background: #cbeaa6;
+    border-radius: 3px;
+
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #C0D684;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+
+    color: #3d0b37;
+}
+.contact{
+    background:linear-gradient(rgba(0,0,0,0.7),#355135),url(pictures/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #C0D684;
+    color: #C0D684;
+    background: transparent;
+    font-size: 20px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #C0D684;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    color: #C0D684;
+    outline: none;
+    background: transparent;
+    border: 1px solid #C0D684;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group {
+    flex-basis: 48%;
+}
+footer{
+    background-color: #C0D684;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: beige;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: #C0D684;
+    opacity: 0.9;
+
+}
+
+.socialIcons a:hover{
+    background-color: #c0d684;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: beige;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: beige;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #cbeaa6;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: beige;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
